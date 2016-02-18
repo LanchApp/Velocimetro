@@ -1,0 +1,33 @@
+import UIKit
+
+enum Velocidades : Int {
+    
+    case Apagado = 0 , VelocidadBaja = 20, VelocidadMedia = 50, VelocidadAlta = 120
+    
+    
+    init ( velocidadInicial : Velocidades){
+        
+        self = velocidadInicial
+        
+    }
+    
+}
+
+class Auto {
+    
+    var velocidad = Velocidades.self
+    
+
+    init(){
+        
+        self.velocidad.Apagado
+        
+    }
+    
+    func cambioVelocidad (actual: Int, velocidadEnCadena: String) ->String{
+    
+        return "\(actual), \(velocidadEnCadena) "
+    
+    }
+    
+}
